@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>点乐自助平台-新广告创建通知</title>
+  <link rel="stylesheet" href="../css/ad-new.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>有新广告了！</h1>
+  <p class="lead"><strong>{{owner}}</strong> 创建了一个广告，详情如下，请尽快处理。</p>
+
+  <table class="table table-bordered table-striped">
+    <tr>
+      <th>广告名</th>
+      <td>{{ad_name}}</td>
+    </tr>
+    <tr>
+      <th>广告主报价</th>
+      <td>{{quote_rmb}}</td>
+    </tr>
+    <tr>
+      <th>渠道名称</th>
+      <td>{{channel}}</td>
+    </tr>
+    <tr>
+      <th>完成条件</th>
+      <td>{{cate}}</td>
+    </tr>
+    <tr>
+      <th>备注</th>
+      <td>{{others}}</td>
+    </tr>
+  </table>
+
+
+  <a href="http://www.dianjoy.com/dev/admin/#/ad/edit/{{id}}" target="_blank" class="btn btn-primary btn-lg btn-block">立即处理</a>
+</div>
+
+</body>
+</html>

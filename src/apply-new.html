@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>点乐自助平台-广告修改申请</title>
+  <link rel="stylesheet" href="../css/ad-new.css">
+</head>
+<body>
+<div class="container">
+<h1>修改广告申请</h1>
+<p class="lead"><strong>{{owner}}</strong>想修改广告 <strong>{{channel}} {{ad_name}} {{cid}}</strong>。请尽快处理。</p>
+
+<table class="table table-bordered table-striped">
+  <caption>变动如下</caption>
+  <tr>
+    <th>广告ID</th>
+    <td><a href="http://www.dianjoy.com/dev/admin/#/ad/{{id}}" target="_blank" title="直达链接">{{id}}</a></td>
+  </tr>
+  <tr>
+    <th>属性</th>
+    <td>{{label}}</td>
+  </tr>
+  <tr>
+    <th>修改为</th>
+    <td>
+      {{#is_status}}{{#value}}下线{{/value}}{{^value}}上线{{/value}}{{/is_status}}
+      {{^is_status}}{{value}}{{/is_status}}
+    </td>
+  </tr>
+  <tr>
+    <th>附言</th>
+    <td>{{comment}}</td>
+  </tr>
+</table>
+
+<a href="http://www.dianjoy.com/dev/admin/#/ad/apply/" target="_blank" class="btn btn-primary btn-lg btn-block">立即处理</a>
+</div>
+</body>
+</html>

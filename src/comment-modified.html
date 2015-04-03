@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>点乐自助平台-广告修改通知</title>
+  <link rel="stylesheet" href="../css/ad-new.css">
+</head>
+<body>
+<div class="container">
+  <h1>广告修改通知</h1>
+  <p class="lead"><strong>{{owner}}</strong> 修改了广告 <strong>{{channel}} {{ad_name}} {{cid}}</strong> 的备注。请知悉。</p>
+
+  <table class="table table-bordered table-striped">
+    <caption>变动如下</caption>
+    <tr>
+      <th>修改内容</th>
+      <td>广告备注</td>
+    </tr>
+    <tr>
+      <th>修改为</th>
+      <td>
+        {{others}}
+      </td>
+    </tr>
+  </table>
+
+  <a href="http://www.dianjoy.com/dev/admin/#/ad/list/" target="_blank" class="btn btn-primary btn-block btn-lg">立即处理</a>
+</div>
+</body>
+</html>
