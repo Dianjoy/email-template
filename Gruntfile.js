@@ -2,8 +2,7 @@
  * Created by meathill on 15/4/2.
  */
 module.exports = function (grunt) {
-  var import_reg = /@import url\((.*)\);/mig
-    , style_reg = /<style>([\S\s]+)<\/style>/mig
+  var link_reg = /<link rel="stylesheet" href="(.*)"\s?>/ig
     , TEMP = 'temp/';
 
   grunt.initConfig({
@@ -52,7 +51,7 @@ module.exports = function (grunt) {
     grunt.file.recurse('src', function (path, root, sub, filename) {
       var content = grunt.file.read(path)
         , csses = [];
-      content.replace(import_reg, function (match, css) {
+      content.replace(link_reg, function (match, css) {
         css = grunt.file.read(css.replace('../', ''));
         csses.push(css);
       });
@@ -64,7 +63,7 @@ module.exports = function (grunt) {
     grunt.file.recurse('src', function (path, root, sub, filename) {
       var content = grunt.file.read(path)
         , css = grunt.file.read(TEMP + filename + '.min.css');
-      content = content.replace(style_reg, '<style>' + css + '</style>');
+      content = content.replace(link_reg, '<style>' + css + '</style>');
       grunt.file.write(TEMP + filename, content);
     });
   });
