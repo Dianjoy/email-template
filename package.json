@@ -1,0 +1,33 @@
+{
+  "name": "email-template",
+  "version": "0.1.0",
+  "description": "creating mail templates with embeded assests",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.12.2"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-htmlmin": "^0.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dianjoy/email-template.git"
+  },
+  "keywords": [
+    "email",
+    "template"
+  ],
+  "author": "Meathill <lujia.zhai@dianjoy.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dianjoy/email-template/issues"
+  },
+  "homepage": "https://github.com/Dianjoy/email-template"
+}

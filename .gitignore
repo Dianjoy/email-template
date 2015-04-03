@@ -1,9 +1,13 @@
 # IDE
 .idea
 
-# build
+# compass
 css/
 **/.sass-cache
 
 # repo
 bower_components
+node_modules
+
+# build
+/*.html
