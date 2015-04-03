@@ -1,0 +1,9 @@
+# IDE
+.idea
+
+# build
+css/
+**/.sass-cache
+
+# repo
+bower_components

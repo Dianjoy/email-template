@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>无限点乐广告报备邮件</title>
+  <style>
+    @import url(../css/normalize.css);
+    @import url(../css/table.css);
+    @import url(../css/alert.css);
+  </style>
+</head>
+<body>
+  <div class="alert alert-info">
+    欢迎您使用点乐广告平台。这封邮件将确保我们掌握的信息一致，保证您的应用得到最好的推广。<br>
+    请勿修改此邮件，直接转发至<a href="mailto:baobei@dianjoy.com">baobei@dianjoy.com</a>即可完成报备。<br>
+    希望我们今后合作愉快。
+  </div>
+  <table class="table table-bordered">
+    <caption>广告上线价格报备表</caption>
+    <tbody>
+    <tr>
+      <th>上线产品</th>
+      <td>{{ad_name}}</td>
+    </tr>
+    <tr>
+      <th>渠道信息</th>
+      <td>{{channel}}</td>
+    </tr>
+    <tr>
+      <th>版本</th>
+      <td>{{ad_lib}}</td>
+    </tr>
+    <tr>
+      <th>渠道号</th>
+      <td>{{cid}}</td>
+    </tr>
+    <tr>
+      <th>包体积</th>
+      <td>{{ad_size}}</td>
+    </tr>
+    <tr>
+      <th>单价</th>
+      <td>&yen; {{quote_rmb}}</td>
+    </tr>
+    <tr>
+      <th>应用类型</th>
+      <td>{{ad_type}}</td>
+    </tr>
+    <tr>
+      <th>应用介绍</th>
+      <td>{{{ad_desc}}</td>
+    </tr>
+    <tr>
+      <th>应用所需权限</th>
+      <td>{{permissions}}</td>
+    </tr>
+    <tr>
+      <th>有效数据方式</th>
+      <td>{{cate}}</td>
+    </tr>
+    <tr>
+      <th>投放要求</th>
+      <td>{{others}}</td>
+    </tr>
+    <tr>
+      <th>数据反馈方式</th>
+      <td>{{feedback}}</td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>

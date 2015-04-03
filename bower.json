@@ -1,0 +1,25 @@
+{
+  "name": "email-template",
+  "version": "0.1.0",
+  "homepage": "https://github.com/Dianjoy/email-template",
+  "authors": [
+    "Meathill <lujia.zhai@dianjoy.com>"
+  ],
+  "description": "make email template",
+  "main": "index.html",
+  "keywords": [
+    "email",
+    "template"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}
