@@ -2,7 +2,7 @@
 <html lang="zh-cmn-Hans">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>广告跟踪-{{ad_name}}</title>
+  <title>广告跟踪-{{app_name}}</title>
   <link rel="stylesheet" href="../css/ad-new.css">
 </head>
 <body>
@@ -12,11 +12,11 @@
   <table class="table table-bordered table-striped">
     <tr>
       <th>广告名</th>
-      <td>{{ad_name}}</td>
+      <td>{{app_name}}</td>
     </tr>
     <tr>
       <th>发现渠道</th>
-      <td>{{#channels}}{{./}} {{/channels}}</td>
+      <td>{{#channels}}{{.}} {{/channels}}</td>
     </tr>
     <tr>
       <th>产品类型</th>
@@ -28,16 +28,14 @@
     </tr>
     <tr>
       <th>点乐投放历史</th>
-      <td>{{#delivered_channel}}在点乐投放过，但最近一周内没有投放，之前的投放渠道：{{#delivered_channel}}{{./}} {{/delivered_channel}}{{/delivered_channel}}{{^delivered_channel}}从未在点乐投放过{{/delivered_channel}}</td>
+      <td>{{#delivered_channel}}在点乐投放过，但最近一周内没有投放，之前的投放渠道：{{delivered_channel}}{{/delivered_channel}}{{^delivered_channel}}从未在点乐投放过{{/delivered_channel}}</td>
     </tr>
     <tr>
       <th>备注</th>
-      <td>{{others}}</td>
+      <td>{{comment}}</td>
     </tr>
   </table>
 
-
-  <a href="http://www.dianjoy.com/dev/admin/#/ad/edit/{{id}}" target="_blank" class="btn btn-primary btn-lg btn-block">立即处理</a>
 </div>
 
 </body>
