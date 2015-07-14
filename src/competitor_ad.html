@@ -15,20 +15,16 @@
       <td>{{app_name}}</td>
     </tr>
     <tr>
-      <th>发现渠道</th>
-      <td>{{#channels}}{{.}} {{/channels}}</td>
+      <th>广告来源</th>
+      <td>{{source}}</td>
     </tr>
     <tr>
-      <th>产品类型</th>
-      <td>{{category}}</td>
-    </tr>
-    <tr>
-      <th>产品开发商/代理商</th>
-      <td>{{corp}}</td>
+      <th>公司名</th>
+      <td>{{company_name}}</td>
     </tr>
     <tr>
       <th>点乐投放历史</th>
-      <td>{{#delivered_channel}}在点乐投放过，但最近一周内没有投放，之前的投放渠道：{{delivered_channel}}{{/delivered_channel}}{{^delivered_channel}}从未在点乐投放过{{/delivered_channel}}</td>
+      <td>{{status}}，过去一周激活数：{{dj_transfer}}</td>
     </tr>
     <tr>
       <th>备注</th>
