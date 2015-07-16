@@ -20,6 +20,6 @@
     "tests"
   ],
   "devDependencies": {
-    "bootstrap-sass": "twbs/bootstrap-sass#~3.3.4"
+    "bootstrap-sass": "twbs/bootstrap-sass#~3.3.5"
   }
 }

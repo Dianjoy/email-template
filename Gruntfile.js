@@ -9,6 +9,9 @@ module.exports = function (grunt) {
     clean: {
       build: TEMP
     },
+    compass: {
+      dist: {} // all options in config.rb
+    },
     cssmin: {
       target: {
         options: {
@@ -46,6 +49,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-htmlmin');
+  grunt.loadNpmTasks('grunt-contrib-compass');
 
   grunt.registerTask('extract', 'extract css imports', function () {
     grunt.file.recurse('src', function (path, root, sub, filename) {
@@ -70,6 +74,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('default', [
     'clean',
+    'compass',
     'extract',
     'cssmin',
     'replace',
