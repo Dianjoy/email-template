@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>无限点乐广告报备邮件</title>
+  <link rel="stylesheet" href="../css/baobei.css">
+</head>
+<body>
+<div class="container">
+  <h1>感谢您选择点乐广告平台。</h1>
+  <div class="alert alert-info">
+    这封邮件将确保我们掌握的信息一致，保证您的应用得到最好的推广。<br>
+    请勿修改此邮件，直接转发至<a href="mailto:baobei@dianjoy.com" class="alert-link">baobei@dianjoy.com</a>即视为您已确认以下内容正确真实有效，同时可完成报备。<br>
+    点乐期待与您继续合作。
+  </div>
+  <table class="table table-bordered table-striped">
+    <caption>广告上线价格报备表</caption>
+    <tbody>
+    <tr>
+      <th>上线产品</th>
+      <td>{{ad_name}}</td>
+    </tr>
+    <tr>
+      <th>渠道信息</th>
+      <td>{{agreement}} {{channel}}</td>
+    </tr>
+    <tr>
+      <th>广告链接</th>
+      <td>{{ad_url}}</td>
+    </tr>
+    <tr>
+      <th>投放单价</th>
+      <td>&yen; {{quote_rmb}}</td>
+    </tr>
+    <tr>
+      <th>日投放量</th>
+      <td>{{job_num}}</td>
+    </tr>
+    <tr>
+      <th>投放类型</th>
+      <td>{{#search_flag}}ASO广告{{/search_flag}}{{^search_flag}}普通广告{{/search_flag}}</td>
+    </tr>
+    {{#search_flag}}
+    <tr>
+      <th>ASO关键词</th>
+      <td>{{keywords}}</td>
+    </tr>
+    {{/search_flag}}
+    <tr>
+      <th>投放目标</th>
+      <td>{{put_ipad}}</td>
+    </tr>
+    <tr>
+      <th>有效数据方式</th>
+      <td>{{cate}}</td>
+    </tr>
+    <tr>
+      <th>投放要求</th>
+      <td>{{requirements}}</td>
+    </tr>
+    <tr>
+      <th>数据反馈方式</th>
+      <td>{{feedback}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <p class="hide verify-code">
+    ========
+    {{eid}}
+    ********
+    {{id}}
+    ========
+    {{code}}
+    ********
+  </p>
+</div>
+</body>
+</html>
