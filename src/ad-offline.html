@@ -3,13 +3,19 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>点乐自助平台-广告下线通知</title>
-  <link rel="stylesheet" href="../css/ad-new.css">
+  <link rel="stylesheet" href="../css/type-tables-alerts.css">
 </head>
 <body>
 
 <div class="container">
   <h1>商务通过自主平台下线了广告。</h1>
   <p class="lead"><strong>{{owner}}</strong> 下线了一个广告，详情如下，请知晓。</p>
+
+  {{#status-time}}
+  <div class="alert alert-info">
+    该广告将通过计划任务，在 <time datetime="{{status-time}}">{{status-time}}</time> 下线。
+  </div>
+  {{/status-time}}
 
   <table class="table table-bordered table-striped">
     <tr>
