@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>[回款追踪]-催款邮件通知</title>
+  <link rel="stylesheet" href="../css/ad-new.css">
+</head>
+<body>
+
+<div class="container">
+  <p>以下是{{channel}}渠道未回款的广告，请督促尽快回款， 并请商务总监在v5后台及时修改“预计回款时间”</p>
+
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>年月</th>
+        <th>广告名</th>
+        <th>渠道号</th>
+        <th>收入</th>
+        <th>商务</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    {{#list}}
+      <tr>
+        <td>{{month}}</td>
+        <td>{{ad_name}}</td>
+        <td>{{cid}}</td>
+        <td>{{income}}</td>
+        <td>{{owner}}</td>
+      </tr>
+    {{/list}}
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
