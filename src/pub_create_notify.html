@@ -51,7 +51,11 @@
     </tr>
     <tr>
       <th>广告截图</th>
-      <td><img src="{{ad_shoot}}"/></td>
+      <td>
+        {{#ad_shoots}}
+          <img src="{{.}}" />
+        {{/ad_shoots}}
+      </td>
     </tr>
   </table>
 </div>
