@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>{{channel}}{{month}}-核减申请（发票系统自动生成）</title>
+</head>
+<body>
+
+<div class="container">
+  <table class="table table-bordered table-striped" border="1">
+    <tr>
+      <th>推广期间</th>
+      <th>广告名称</th>
+      <th>渠道号</th>
+      <th>单价（核减前）</th>
+      <th>渠道CPA（核减前）</th>
+      <th>应结算收入（核减前）</th>
+      <th>单价（核减后）</th>
+      <th>渠道CPA（核减后）</th>
+      <th>实际结算收入（核减后）</th>
+      <th>核减比例</th>
+      <th>核减金额</th>
+      <th>备注</th>
+    </tr>
+    {{#ads}}
+    <tr>
+      <td>{{quote_start_date}}~{{quote_end_date}}</td>
+      <td>{{ad_name}}</td>
+      <td>{{cid}}</td>
+      <td>{{quote_rmb}}</td>
+      <td>{{cpa}}</td>
+      <td>{{income}}</td>
+      <td>{{quote_rmb_after}}</td>
+      <td>{{cpa_after}}</td>
+      <td>{{income_after}}</td>
+      <td>{{rate}}</td>
+      <td>{{cut_rmb}}</td>
+      <td>{{remark}}</td>
+    </tr>
+    {{/ads}}
+  </table>
+</div>
+</body>
+</html>
