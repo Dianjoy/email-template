@@ -4,11 +4,11 @@
   "description": "creating mail templates with embeded assests",
   "main": "Gruntfile.js",
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-clean": "~0.6.0",
-    "grunt-contrib-compass": "~1.0.3",
-    "grunt-contrib-cssmin": "~0.13.0",
-    "grunt-contrib-htmlmin": "~0.4.0"
+    "grunt": "^1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compass": "^1.1.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-htmlmin": "^1.4.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

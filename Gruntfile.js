@@ -10,7 +10,13 @@ module.exports = function (grunt) {
       build: TEMP
     },
     compass: {
-      dist: {} // all options in config.rb
+      dist: {
+        options: {
+          config: 'config.rb',
+          outputStyle: 'compressed',
+          sourcemap: false
+        }
+      }
     },
     cssmin: {
       target: {
@@ -56,6 +62,9 @@ module.exports = function (grunt) {
       var content = grunt.file.read(path)
         , csses = [];
       content.replace(link_reg, function (match, css) {
+        if (/^(https?:)?\/\//.test(css)) {
+          return match;
+        }
         css = grunt.file.read(css.replace('../', ''));
         csses.push(css);
       });
@@ -67,7 +76,12 @@ module.exports = function (grunt) {
     grunt.file.recurse('src', function (path, root, sub, filename) {
       var content = grunt.file.read(path)
         , css = grunt.file.read(TEMP + filename + '.min.css');
-      content = content.replace(link_reg, '<style>' + css + '</style>');
+      content = content.replace(link_reg, function (match, src) {
+        if (/^(https?:)?\/\//.test(src)) {
+          return match;
+        }
+        return '<style>' + css + '</style>';
+      });
       grunt.file.write(TEMP + filename, content);
     });
   });

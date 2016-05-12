@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="stylesheet" href="http://www.dianjoy.com/static/foundation/css/foundation.css">
+  <title>KA 广告主执行商务修改</title>
+</head>
+
+<body>
+<table class="container dianjoy" style="background: none;">
+  <tr>
+    <td style="line-height: 2.5;color: #666;"><img src="http://cc-cdn.dianjoy.com/static/img/logo.png" width="20" height="20" style="display: inline-block;vertical-align: text-bottom"> 点乐管理员后台</td>
+  </tr>
+</table>
+<table class="container" style="border: 1px solid #CCC;" cellpadding="5">
+  <tr>
+    <td class="center" align="center" valign="top">
+      <h2 style="line-height: 2;text-align: center;border-bottom: 1px solid #DDD;margin: 0 1em 1em;padding-top: 0.5em">KA 广告主执行商务修改</h2>
+    </td>
+  </tr>
+  <tr>
+    <td class="column first last">
+      <strong style="color:#2980B9;">{{admin}}</strong> 修改了 <strong style="color:#E74C3C">{{channel}}</strong>  的 {{platform}} 执行商务。将 <strong>{{origin}}</strong> 修改为 <strong>{{new}}</strong>，可能影响 {{date}} 以后的数据。请财务核查。
+    </td>
+  </tr>
+  <tr>
+    <td style="line-height: 0.25em" class="column first last">
+      <h3>涉及以下广告：</h3>
+    </td>
+  </tr>
+  <tr>
+    <td class="column first last">
+      <ul>
+        {{#ad}}
+        <li>{{ad_name}} {{cid}}</li>
+        {{/ad}}
+      </ul>
+    </td>
+  </tr>
+</table>
+<hr>
+<table class="container" style="background: none">
+  <tr>
+    <td>
+      <p class="text-right" style="font-size: small;color: #999;">
+        此邮件为系统自动发送，请勿直接回复。如有需要，请与 <a href="mailto:lujia.zhai@dianjoy.com">管理员</a> 联系。
+      </p>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
