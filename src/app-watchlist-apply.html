@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>关小黑屋-拒绝申请</title>
+</head>
+<body>
+<div class="container">
+  <table class="table table-bordered table-striped" border="1">
+    <tr>
+      <th>开发者账户</th>
+      <td>{{account}}</td>
+    </tr>
+    <tr>
+      <th>开发者姓名</th>
+      <td>{{user_name}}</td>
+    </tr>
+    <tr>
+      <th>申请提现时间</th>
+      <td>{{apply_time_str}}</td>
+    </tr>
+    <tr>
+      <th>申请提现金额</th>
+      <td>{{rmb_str}}</td>
+    </tr>
+    <tr>
+      <th>实际结款金额</th>
+      <td>{{is_pay_str}}</td>
+    </tr>
+  </table>
+  <p>
+    备注：该提现申请已经被审核通过，请不要打款。
+  </p>
+</div>
+</body>
+</html>
