@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>点乐自助平台-新投放计划创建通知</title>
+  <link rel="stylesheet" href="../css/ad-new.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>感谢您选择点乐广告平台。</h1>
+  <div class="alert alert-info">
+    <p>此邮件包含您刚刚创建的投放计划，请勿直接回复，将此邮件转发给我方运营 op-ios@dianjoy.com 即视作您确认计划内容，我方将开始执行。</p>
+    <p>点乐期待与您继续合作。</p>
+  </div>
+
+  <table class="table table-bordered table-striped">
+    <tr>
+      <th>广告名</th>
+      <td>{{ad_name}}</td>
+    </tr>
+    <tr>
+      <th>iTunes地址</th>
+      <td>{{ad_url}}</td>
+    </tr>
+    <tr>
+      <th>广告主报价</th>
+      <td>{{quote_rmb}}</td>
+    </tr>
+    <tr>
+      <th>目标平台</th>
+      <td>{{platform}}</td>
+    </tr>
+    <tr>
+      <th>具体安排</th>
+      <td>
+        <table class="table">
+          <thead>
+          <tr>
+            <th>开始时间</th>
+            <th>结束时间</th>
+            <th>关键词</th>
+            <th>份数</th>
+          </tr>
+          </thead>
+          <tbody>
+          {{#plans}}
+          <tr>
+            <td>{{start_time}}</td>
+            <td>{{end_time}}</td>
+            <td>{{keyword}}</td>
+            <td>{{num}}</td>
+          </tr>
+          {{/plans}}
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
