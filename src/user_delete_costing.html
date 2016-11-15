@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>{{account}}的账户已经被封禁，请拒绝其提现申请。</title>
+  <link rel="stylesheet" href="../css/ad-new.css">
+</head>
+<body>
+
+<div class="container">
+  <table class="table table-bordered table-striped" border="1">
+    <tr>
+      <th>开发者账户</th>
+      <td>{{account}}</td>
+    </tr>
+    <tr>
+      <th>开发者姓名</th>
+      <td>{{user_name}}</td>
+    </tr>
+    <tr>
+      <th>申请提现时间</th>
+      {{#apply}}
+      <td>{{apply_time}}</td>
+      {{/apply}}
+    </tr>
+    <tr>
+      <th>申请提现金额</th>
+      {{#apply}}
+      <td>{{rmb}}元</td>
+      {{/apply}}
+    </tr>
+    <tr>
+      <th>实际结款金额</th>
+      {{#apply}}
+      <td>{{is_pay}}元</td>
+      {{/apply}}
+    </tr>
+    <tr>
+      <th>备注</th>
+      <td>该提现申请已经被审核通过，请不要打款。</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
